@@ -52,8 +52,9 @@ namespace Parser
                 source = HtmlСodeLoader.Download(parser.URL);
             }
             catch (System.Net.WebException) {
-                throw new Exception("Не удалось получить данные по адресу " 
-                                    + parser.URL);
+                // Не удалось получить данные по адресу.
+                //throw new Exception("Не удалось получить данные по адресу "
+                                    //+ parser.URL);
             }
 
             var domParser = new HtmlParser();
