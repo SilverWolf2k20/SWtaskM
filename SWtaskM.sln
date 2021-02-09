@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{BCA52A9D-702
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{949A26B3-65E1-4B04-AF8E-FDDE3568FBC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWtaskM.WPF.UI", "SWtaskM.WPF.UI\SWtaskM.WPF.UI.csproj", "{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SWtaskM.WPF.UI", "SWtaskM.WPF.UI\SWtaskM.WPF.UI.csproj", "{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{5B4E6E5D-914C-4AD9-ABAE-9B7F92544F0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +23,17 @@ Global
 		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B4E6E5D-914C-4AD9-ABAE-9B7F92544F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B4E6E5D-914C-4AD9-ABAE-9B7F92544F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B4E6E5D-914C-4AD9-ABAE-9B7F92544F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B4E6E5D-914C-4AD9-ABAE-9B7F92544F0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8} = {BCA52A9D-7028-48AB-933A-B5FD74A21346}
+		{5B4E6E5D-914C-4AD9-ABAE-9B7F92544F0A} = {823A93CE-803B-4039-8EAB-4BA63EF827CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07390C1F-236E-4C0A-881A-1C37064289B6}
