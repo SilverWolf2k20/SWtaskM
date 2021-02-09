@@ -23,7 +23,6 @@ namespace SWtaskM.WPF.UI
         public MainWindow()
         {
             InitializeComponent();
-
         }
     }
 }
