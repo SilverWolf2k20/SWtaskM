@@ -3,10 +3,96 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:SWtaskM.WPF.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Height="600" 
+        Width="1000"       
+        ResizeMode="NoResize" 
+        WindowStyle="None">
+    <!--Loaded="WindowLoaded"-->
+    <!--KeyDown="WindowKeyDown"-->
+    <Grid Background="White">
+        <!--MouseLeftButtonDown="GridMouseLeftButtonDown">-->
 
+        <StackPanel VerticalAlignment="Top">
+            <Grid Margin="5">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Right">
+                    <Button Width="30"
+                            Height="30"
+                            Background="{x:Null}"
+                            BorderBrush="{x:Null}"
+                            Foreground="Gray"
+                            Padding="0">
+                        <materialDesign:PackIcon Kind="Wifi"/>
+                    </Button>
+                    <Button x:Name="buttonSettings"
+                            Width="30"
+                            Height="30"
+                            Background="{x:Null}"
+                            BorderBrush="{x:Null}"
+                            Foreground="Gray"
+                            Padding="0">
+                        <!--"ButtonSettingsClick">-->
+                        <materialDesign:PackIcon Kind="Settings"/>
+                    </Button>
+                    <Button x:Name="buttonExit"
+                            Width="30"
+                            Height="30"
+                            Background="{x:Null}"
+                            BorderBrush="{x:Null}"
+                            Foreground="Gray"
+                            Padding="0">
+                        <!--Click="ButtonExitClick">-->
+                        <materialDesign:PackIcon Kind="Power"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+
+        <Grid x:Name="gridDirector" 
+              Margin="250 55 0 0 ">
+        </Grid>
+
+        <Grid Width="250"
+              HorizontalAlignment="Left"
+              Background="#333333">
+            <TextBlock Text="SWtaskM"
+                       VerticalAlignment="Top"
+                       Margin="20"
+                       FontWeight="Bold" 
+                       Foreground="Gray"
+                       FontFamily="Segoe UI Black" 
+                       FontSize="26"/>
+            <materialDesign:TransitioningContent x:Name="trainsitionigContentSlide" 
+                                                 OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.2}">
+                <Grid x:Name="gridCursor"
+                      Background="#FF0069C0"
+                      Width="10"
+                      HorizontalAlignment="Left"
+                      Height="60"
+                      Margin="0 100 0 0"
+                      VerticalAlignment="Top"/>
+            </materialDesign:TransitioningContent>
+            <ListView x:Name="listViewMenu" 
+                      Margin="0 100 0 400">
+                <!--SelectionChanged="ListViewMenuSelectionChanged">-->
+                <ListViewItem Height="60" 
+                              Foreground="LightGray">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Home"
+                                                 Width="30"
+                                                 Height="30"
+                                                 VerticalAlignment="Center"
+                                                 Margin="5"/>
+                        <TextBlock Text="Домой"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   Margin="20 0" FontFamily="Dubai Medium"/>
+                    </StackPanel>
+                </ListViewItem>
+            </ListView>
+        </Grid>
     </Grid>
 </Window>
