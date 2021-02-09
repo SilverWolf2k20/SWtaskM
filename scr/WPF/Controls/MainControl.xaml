@@ -131,7 +131,7 @@
                     </Grid.ColumnDefinitions>
 
                     <StackPanel Margin="5">
-                        <TextBlock x:Name="textBlockTemperature" 
+                        <TextBlock x:Name="textTemperature" 
                                    FontSize="20" 
                                    FontWeight="Bold" 
                                    Foreground="White">
