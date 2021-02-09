@@ -28,7 +28,7 @@ namespace ViewModel.Core.Widgets.Weather
         {
             temperature = default;
             weatherStatus = default;
-            //weatherPictureName = "Textures/";
+            weatherPictureName = @"Textures\Weather\";
         }
 
         /// <summary>
@@ -38,9 +38,9 @@ namespace ViewModel.Core.Widgets.Weather
         private void ParserWorkerOnNewData(string[] data)
         {
             if (data.Length > 2) {
-                temperature   = data[0].Trim();
+                temperature = data[0].Trim();
                 weatherStatus = data[2].Trim();
-                //ConditionAnalysis();
+                ConditionAnalysis();
             }
             else {
                 temperature = "Нет данных.";
@@ -51,7 +51,7 @@ namespace ViewModel.Core.Widgets.Weather
         /// <summary>
         /// Анализ состояния для выбора изображения на спрайт.
         /// </summary>
-        /*private void ConditionAnalysis()
+        private void ConditionAnalysis()
         {
             if (weatherStatus == null)
                 throw new ArgumentNullException("weatherStatus == null");
@@ -60,7 +60,7 @@ namespace ViewModel.Core.Widgets.Weather
                 weatherPictureName += "snow.png";
             else
                 weatherPictureName += "cloudy.png";
-        }*/
+        }
 
         /// <summary>
         /// Загружает данные о погоде.
@@ -88,6 +88,10 @@ namespace ViewModel.Core.Widgets.Weather
         /// Возвращает путь к файлу спрайта.
         /// </summary>
         /// <returns>Путь к файлу спрайта.</returns>
-        public string GetPathImage() => weatherPictureName;
+        public Uri GetPathImg()
+        {
+            return new Uri($@"{Environment.CurrentDirectory}\" +
+                           $@"{weatherPictureName}");
+        }
     }
 }
