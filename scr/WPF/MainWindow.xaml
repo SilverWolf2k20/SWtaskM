@@ -9,13 +9,12 @@
         Height="600" 
         Width="1000"       
         ResizeMode="NoResize" 
-        WindowStyle="None">
-    <!--Loaded="WindowLoaded"-->
-    <!--KeyDown="WindowKeyDown"-->
-    <Grid Background="White">
-        <!--MouseLeftButtonDown="GridMouseLeftButtonDown">-->
+        WindowStyle="None"
+        Loaded="WindowLoaded">
+    <Grid Background="White"
+          MouseLeftButtonDown="GridMouseLeftButtonDown">
 
-        <StackPanel VerticalAlignment="Top">
+    <StackPanel VerticalAlignment="Top">
             <Grid Margin="5">
                 <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right">
@@ -43,8 +42,8 @@
                             Background="{x:Null}"
                             BorderBrush="{x:Null}"
                             Foreground="Gray"
-                            Padding="0">
-                        <!--Click="ButtonExitClick">-->
+                            Padding="0"
+                            Click="ButtonExitClick">
                         <materialDesign:PackIcon Kind="Power"/>
                     </Button>
                 </StackPanel>
