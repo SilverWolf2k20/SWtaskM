@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Core\" />
+    <ProjectReference Include="..\Parser\Parser.csproj" />
   </ItemGroup>
 
 </Project>
