@@ -5,6 +5,20 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <ApplicationIcon>ico02.ico</ApplicationIcon>
+    <Copyright>Copyright (c) SW Okolo IT. Все права защищены.</Copyright>
+    <Company>Okolo IT</Company>
+    <Product>SWtaskM</Product>
+    <Description>Много функциональный планировщик дел.</Description>
+    <PackageProjectUrl>https://vk.com/okolo_it_govnokoding</PackageProjectUrl>
+    <PackageIcon>ico02.ico</PackageIcon>
+    <RepositoryUrl>https://github.com/SilverWolf2k20?tab=repositories</RepositoryUrl>
+    <RepositoryType>Закрытый</RepositoryType>
+    <PackageTags>#task_manager #CSharp #wpf</PackageTags>
+    <NeutralLanguage>ru-BY</NeutralLanguage>
+    <AssemblyVersion>3.1.0.1</AssemblyVersion>
+    <PackageLicenseExpression>При критических ошибках и сноса к хренам системы компания Okolo IT не несёт за это ответсвенности.</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Первая рабочая версия!</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,6 +27,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SharedViewModel\ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Textures\ico02.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
