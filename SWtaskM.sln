@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{823A93CE-803B-4039-8EAB-4BA63EF827CA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{BCA52A9D-7028-48AB-933A-B5FD74A21346}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{949A26B3-65E1-4B04-AF8E-FDDE3568FBC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWtaskM.WPF.UI", "SWtaskM.WPF.UI\SWtaskM.WPF.UI.csproj", "{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BAE8F631-51E4-44E8-AE3C-899B94B4CDC8} = {BCA52A9D-7028-48AB-933A-B5FD74A21346}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07390C1F-236E-4C0A-881A-1C37064289B6}
+	EndGlobalSection
+EndGlobal
